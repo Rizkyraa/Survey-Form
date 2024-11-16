@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body> 
+    <h1 id="title">Random Survey</h1>
+    <p id="description">The most random survey on earth.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input type="text" id="name" placeholder="Enter Your Name" required></label><br>
+        <label id="email-label">Email<input type="email" id="email" placeholder="example@gmail.com" required></label><br>
+        <label id="number-label">Age (Optional)<input type="number" id="number" min="14" max="18" placeholder="Enter your age"></label>
+        <label for="dropdown"> Where are you now?</label>
+        <select id="dropdown" name="dropdown" required>
+          <option value="">Choose based on where you are:</option>
+          <option value="earth">Earth</option>
+          <option value="heaven">Heaven</option>
+          <option value="mars">Mars</option>
+        </select>
+        <fieldset>
+          <label>How many pets do you have?<br>
+          <input type="radio" id="radio" value="one" name="Pets" required>One<br>
+          <input type="radio" id="radio" value="two" name="Pets" required>Two<br>
+          <input type="radio" id="radio" value="none" name="Pets" required>I didn't have any pet
+          </label><br>
+          <label>What is 1 + 1 ?<br>
+          <input type="checkbox" id="math" value="one" name="one" required>One<br>
+          <input type="checkbox" id="math" value="two" name="two">Two
+          </label>
+        </fieldset>
+          <label for="opinion" id="opinion"> Insert your opinion (optional)
+            <textarea id="opinion" value="" placeholder="Your opinions make us better...."></textarea>
+            <input id="submit" type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
